@@ -2,12 +2,10 @@ import React from 'react'
 
 export default function Darkmode() {
   
-  let detailsHolder = document.getElementById('details-holder')
-  function handleDark(){
-    
-    detailsHolder.style.background = 'black'
-    detailsHolder.style.color = "red"
-  }
+  const [Theme, setTheme] = useState({
+    backgroundColor : "black",
+    color : "white"
+  })
   return (
     <>
     <div>
@@ -145,7 +143,7 @@ export default function Darkmode() {
             <form action="#" method="POST">
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
-                  <div className="grid grid-cols-6 gap-6" id="details-holder">
+                  <div className="grid grid-cols-6 gap-6" >
                     <div className="col-span-6 sm:col-span-3">
                       <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
                         First name
@@ -259,7 +257,7 @@ export default function Darkmode() {
                     type="button"
                     className="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
 
-                    onClick={handleDark}
+                    // onClick={handleDark}
                   >
                     Save
                   </button>
@@ -271,13 +269,13 @@ export default function Darkmode() {
       </div>
 
       <div className="hidden sm:block" aria-hidden="true">
-        <div className="py-5">
+        <div className="py-5" >
           <div className="border-t border-gray-200" />
-        </div>
+        </div >
       </div>
 
       <div className="mt-10 sm:mt-0">
-        <div className="md:grid md:grid-cols-3 md:gap-6">
+        <div className="md:grid md:grid-cols-3 md:gap-6" >
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
               <h3 className="text-base font-semibold leading-6 text-gray-900">Notifications</h3>
