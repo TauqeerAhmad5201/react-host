@@ -4,6 +4,8 @@
   "homepage": "https://TauqeerAhmad5201.github.io/react-host",
   "private": true,
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
+    "@heroicons/react": "^2.0.16",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -40,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "react-router-dom": "^6.9.0"
   }
 }
