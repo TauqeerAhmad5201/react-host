@@ -7,6 +7,7 @@ export default function Darkmode() {
     color: "black",
   });
   
+  const [mode, setMode] =  useState('Turn on Dark Mode')
   let HandleClick = () =>{
       if(theme.backgroundColor === 'black') {setTheme({
         backgroundColor: "white",
@@ -15,8 +16,8 @@ export default function Darkmode() {
     }
     else {setTheme({
       backgroundColor: "black",
-      color: "white"
-    })
+      color: "white",
+    }, setMode('Turn on Light Mode')) 
     }
   }
     return (
@@ -488,7 +489,7 @@ export default function Darkmode() {
                       className="inline-flex justify-center rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                       onClick={HandleClick}
                     >
-                      Save
+                      {mode}
                     </button>
                   </div>
                 </div>
