@@ -3,6 +3,7 @@ import './App.css';
 import DescriptionList from './components/DescriptionList';
 import Darkmode from './components/Darkmode';
 import Banner from './components/Banner'
+import Input from './components/Input';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Blog></Blog>
     <DescriptionList></DescriptionList>
     <Darkmode></Darkmode>
+    <Input></Input>
     </>
   );
 }
