@@ -5,8 +5,10 @@ import Darkmode from './components/Darkmode';
 import Banner from './components/Banner'
 import Input from './components/Input';
 import JobCard from './components/JobCard';
+import Checkout from './components/Checkout'
 
 function App() {
+
   return (
     <>
     <Banner></Banner>
@@ -15,6 +17,7 @@ function App() {
     <Darkmode></Darkmode>
     <Input></Input>
     <JobCard></JobCard>
+    <Checkout></Checkout>
     </>
   );
 }
