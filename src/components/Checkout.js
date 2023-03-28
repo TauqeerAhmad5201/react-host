@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react'
+import React from "react";
+import { useEffect, useState } from "react";
 
 export default function Checkout() {
-  useEffect(() => {    
-    alert("My Alert")  },[]);
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  });
   return (
     <>
-    <p>
-      hello World!
-    </p>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button>Done!</button>
     </>
-  )
+  );
 }
