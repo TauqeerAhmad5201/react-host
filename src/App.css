@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.textarea{
+  color:black;
+}
+input{
+  color: black;
+}
+.apply{
+  color:white;
+  background-color:black;
+}
